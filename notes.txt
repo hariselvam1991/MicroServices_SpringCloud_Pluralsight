@@ -1,0 +1,17 @@
+./mvnw spring-boot:run
+
+gcloud functions deploy techbruiser-gcp-http --entry-point or.springframework.cloud.function.adapter.gcp.GcfJarLauncher
+--runtime java8 --trigger-http --source target/deploy --memory 512MB
+
+kc.bat start-dev
+
+klock
+hariselvam1991@gmail.com
+Keycloak@6305
+
+http://localhost:8080/admin/master/console/#/server-info/providers
+
+
+https://www.keycloak.org/docs/latest/authorization_services/index.html
+
+http://localhost:8080/realms/techbruiser/protocol/openid-connect/token
